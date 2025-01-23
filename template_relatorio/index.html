@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header id="header-pg-resumo">
+      <div class="titulo">
+        <img src="./public/logo_assesso.png" alt="assesso logo" />
+        <p>Relatorio - {Nome da ferramenta}</p>
+      </div>
+      <div class="autor-data">
+        <div>
+        <b>Autor:</b> {Nome do autor da ferramenta}</div>
+        <div id="data"><b>DD/MM/AAAA</b></div>
+
+    </header>
+
+
+    <div class="container-content">
+      Descirção da ferramenta
+      <div>
+      <h1>Resumo</h1>
+      Abaixo estão os testes realizados para verificar 
+      <!-- conteudo sera gerano telo script python -->
+      <div class="teste-resumo">
+        <div>
+        <h2>{Nome do teste}</h2>
+        <!-- o nome da classe vai mudar de acordo com o resultado-->
+        <div class="metricas" >
+          <h3>{metrica}</h3>
+          <p>Resultado esperado: "{Resultado esperado}"</p>
+          <p>Resultado recebido: "{Resultado recebido}"</p>
+        </div>
+        <div class="metricas">
+          <h3>{metrica}</h3>
+          <p>Resultado esperado: "{Resultado esperado}"</p>
+          <p>Resultado recebido: "{Resultado recebido}"</p>
+        </div>
+        <div class="metricas">
+          <h3>{metrica}</h3>
+          <p>Resultado esperado: "{Resultado esperado}"</p>
+          <p>Resultado recebido: "{Resultado recebido}"</p>
+        </div>
+        <p class="teste-aprovado" ><b>Aprovado</b></p>
+        <a href="#">Ver saida detelhada</a>
+      </div>
+        <div>
+        <h2>{Nome do teste}</h2>
+        <!-- o nome da classe vai mudar de acordo com o resultado-->
+        <div class="metrica metrica-reporvada" >
+          <h3>{metrica}</h3>
+          <p class="resultado-esperado">Resultado esperado: "{Resultado esperado}"</p>
+          <p class="resultado-esperado">Resultado recebido: "{Resultado recebido}"</p>
+        </div>
+        <div>
+          <h3>{metrica}</h3>
+          <p>Resultado esperado: "{Resultado esperado}"</p>
+          <p>Resultado recebido: "{Resultado recebido}"</p>
+        </div>
+        <div>
+          <h3>{metrica}</h3>
+          <p>Resultado esperado: "{Resultado esperado}"</p>
+          <p>Resultado recebido: "{Resultado recebido}"</p>
+        </div>
+        <p class="teste-reprovado"><b>Reprovado</b></p>
+        <a href="#">Ver saida detelhada</a>
+      </div>
+
+
+      </div>
+      <div clas="saida-detalhada">
+        <h1 id="{nome_do_teste}">{nome_do_teste}</h1>
+        <p><b>Saida esperada:</b>{A dercricao da saida}</p>
+        <div class="reques-e-reponse">
+          <div>{request}</div>
+          <div>{response}</div>
+        </div>
+
+      </div>
+      </div>    
+    </div>
+  </body>
+</html>
