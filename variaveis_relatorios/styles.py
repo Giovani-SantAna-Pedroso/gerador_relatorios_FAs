@@ -4,14 +4,14 @@ style = """
         margin: 20mm 0mm; /* Set margin on each page */
       }
         @page :first {
-            margin: 0cm 0cm 20mm 0cm; /* Margin for the first page */
+            margin: 0cm 0cm 10mm 0cm; /* Margin for the first page */
         }
 
 body {
   --vermelho-assesso: #cc0002;
   padding: 0px;
   margin: 0px;
-
+    font-size:12px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,8 +21,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 #header-pg-resumo {
@@ -74,8 +73,26 @@ h2 {
   font-weight: bold;
 }
 
+.metricas-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+flex-wrap: wrap;
+}
+
+.metrica-container{
+    min-width: 30%;
+    margin-right: 20px
+}
+
+.container-teste{
+    display:flex;
+    flex-direction:column; 
+}
+
 .resultado-esperado {
-  font-family: "Courier New", Courier, "Lucida Console", Monaco, monospace;
+    font-family: "Courier New", Courier, "Lucida Console";
+    line-height: 0.8;
 }
 
 .metrica {

@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo PDF</title>
+    <style>
+    
+@page {
+        size: A4; /* Change from the default size of A4 */
+        margin: 20mm 0mm; /* Set margin on each page */
+      }
+        @page :first {
+            margin: 0cm 0cm 10mm 0cm; /* Margin for the first page */
+        }
+
+body {
+  --vermelho-assesso: #cc0002;
+  padding: 0px;
+  margin: 0px;
+    font-size:12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: var(--vermelho-assesso);
+  font-size: 44px;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+#header-pg-resumo {
+  background-color: var(--vermelho-assesso);
+  color: #fff;
+}
+#header-pg-resumo .titulo {
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+#header-pg-resumo .titulo p {
+  margin-left: 40px;
+  font-size: 30px;
+}
+#header-pg-resumo .autor-data {
+  padding: 6px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#header-pg-resumo .autor-data {
+  font-size: 20px;
+}
+
+.container-content {
+  padding: 24px 50px;
+}
+
+.teste-aprovado,
+.teste-reprovado {
+  margin: 20px 0px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.teste-aprovado {
+  background-color: green;
+}
+.teste-reprovado {
+  background-color: red;
+}
+.metrica-reporvada {
+  color: red;
+  font-weight: bold;
+}
+
+.metricas-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+flex-wrap: wrap;
+}
+
+.metrica-container{
+    min-width: 30%;
+    margin-right: 20px
+}
+
+.container-teste{
+    display:flex;
+    flex-direction:column; 
+}
+
+.resultado-esperado {
+    font-family: "Courier New", Courier, "Lucida Console";
+    line-height: 0.8;
+}
+
+.metrica {
+  margin-bottom: 10px;
+}
+
+.reques-e-reponse {
+  display: flex;
+  flex-direction: row;
+  color: #888888;
+}
+
+.request {
+  width: 100%;
+  padding: 10px;
+}
+.reponse {
+  border-left: 1px solid #000;
+  width: 100%;
+  padding: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    
+    <header id="header-pg-resumo">
+      <div class="titulo">
+        <img src="logo.png" alt="assesso logo" />
+        <p>Relatorio - FA_TESTE</p>
+      </div>
+      <div class="autor-data">
+        <div>
+        <b>Autor:</b> Giovani</div>
+        <div id="data"><b>23/January/2025</b></div>
+    </header>
+            
+    <div class="container-content">
+    
+<h1>Resumo</h1>
+<p>Apenas um resumo de teste</p>
+            
+    
+        <div class="container-teste">
+
+          <h2>bbbb</h2>
+
+          <div class="metricas-container">
+    
+        <div class= "metrica-container" >
+            <div class=  metrica-reporvada>
+                <h3>org</h3>
+                <p class="resultado-esperado">Valor esperado: "B"</p>
+                <p class="resultado-esperado">Valor recebido: "A"</p>
+            </div>
+        </div>
+    
+        <div class= "metrica-container" >
+            <div class= >
+                <h3>tes</h3>
+                <p class="resultado-esperado">Valor esperado: "A"</p>
+                <p class="resultado-esperado">Valor recebido: "A"</p>
+            </div>
+        </div>
+    
+        <div class= "metrica-container" >
+            <div class= >
+                <h3>oqe</h3>
+                <p class="resultado-esperado">Valor esperado: "A"</p>
+                <p class="resultado-esperado">Valor recebido: "A"</p>
+            </div>
+        </div>
+    
+        <div class= "metrica-container" >
+            <div class=  metrica-reporvada>
+                <h3>eee</h3>
+                <p class="resultado-esperado">Valor esperado: "C"</p>
+                <p class="resultado-esperado">Valor recebido: "A"</p>
+            </div>
+        </div>
+    
+    </div>
+            <p class="teste-reprovado"><b>Reprovado</b></p>
+        
+            <a href="#bbbb">Ver saida detelhada</a>
+        </div>
+    
+    
+        <div class="container-teste">
+
+          <h2>aaaa</h2>
+
+          <div class="metricas-container">
+    
+        <div class= "metrica-container" >
+            <div class= >
+                <h3>org</h3>
+                <p class="resultado-esperado">Valor esperado: "A"</p>
+                <p class="resultado-esperado">Valor recebido: "A"</p>
+            </div>
+        </div>
+    
+        <div class= "metrica-container" >
+            <div class= >
+                <h3>tes</h3>
+                <p class="resultado-esperado">Valor esperado: "A"</p>
+                <p class="resultado-esperado">Valor recebido: "A"</p>
+            </div>
+        </div>
+    
+        <div class= "metrica-container" >
+            <div class= >
+                <h3>oqe</h3>
+                <p class="resultado-esperado">Valor esperado: "A"</p>
+                <p class="resultado-esperado">Valor recebido: "A"</p>
+            </div>
+        </div>
+    
+        <div class= "metrica-container" >
+            <div class= >
+                <h3>eee</h3>
+                <p class="resultado-esperado">Valor esperado: "A"</p>
+                <p class="resultado-esperado">Valor recebido: "A"</p>
+            </div>
+        </div>
+    
+    </div>
+            <p class="teste-aprovado" ><b>Aprovado</b></p>
+        
+            <a href="#aaaa">Ver saida detelhada</a>
+        </div>
+    
+    
+      <div id=bbbb clas="saida-detalhada">
+        <h1 id="bbbb">bbbb</h1>
+        <p><b>Saida esperada: </b>aa</p>
+        <div class="reques-e-reponse">
+          <div class="request">asf</div>
+          <div class="reponse">wwww</div>
+        </div>
+
+      </div>
+    
+    
+      <div id=aaaa clas="saida-detalhada">
+        <h1 id="aaaa">aaaa</h1>
+        <p><b>Saida esperada: </b>aa</p>
+        <div class="reques-e-reponse">
+          <div class="request">asf</div>
+          <div class="reponse">wwww</div>
+        </div>
+
+      </div>
+    
+    </div>
+</body>
+</html>
+    
